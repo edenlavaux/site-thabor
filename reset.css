@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -23,6 +24,3 @@ img {
     max-width: 100%;
 }
 
-a:hover {
-    font-weight: var(--font-weight-bold);
-}
