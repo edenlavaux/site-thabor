@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-family-content);
+    color: var(--color-mallard);
+    background-color: var(--color-off-yellow);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-mallard);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a:hover {
+    font-weight: var(--font-weight-bold);
+}

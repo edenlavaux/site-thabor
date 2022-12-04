@@ -1,0 +1,31 @@
+:root {
+    /* Fonts */
+    --font-family-title: 'Cinzel', serif;
+    --font-family-content: 'Merriweather', serif;
+
+    /* Colors */
+    --color-chalet-green: #606C38;
+    --color-mallard: #283618;
+    --color-off-yellow: #FEFAE0;
+    --color-tonys-pink: #E29578;
+
+    /* Font sizes */
+    --font-size-xxs: 0.8rem;
+    --font-size-xs: 1.6rem;
+    --font-size-s: 2.4rem;
+    --font-size-m: 3.2rem;
+    --font-size-l: 4rem;
+    --font-size-xl: 4.8rem;
+
+    /* Font weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-xs: 0.8rem;
+    --spacing-s: 1.2rem;
+    --spacing-m: 1.6rem;
+    --spacing-l: 2.4rem;
+    --spacing-xl: 4.8rem;
+}
