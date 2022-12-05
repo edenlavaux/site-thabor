@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover {
     font-weight: var(--font-weight-bold);
 }
@@ -7,4 +11,81 @@ h2,
 h3,
 h4 {
     font-family: var(--font-family-title);
+}
+
+.header,
+.footer {
+    background-color: var(--color-mallard);
+    color: var(--color-off-yellow);
+}
+
+.header>* {
+    padding: 0 var(--spacing-xs);
+}
+
+.header__nav {
+    display: flex;
+    padding: var(--spacing-m) 0;
+    gap: var(--spacing-xs);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo__container {
+    width: 9.6rem;
+}
+
+.links__page,
+.links__language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-m);
+}
+
+.links__language {
+    flex-direction: row;
+}
+
+.links__page a,
+.links__language a {
+    font-size: 2rem;
+    color: var(--color-off-yellow);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-l) 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__information {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-l);
+    font-size: 2rem;
+    gap: var(--spacing-m);
+    width: 100%;
+}
+
+.footer__title {
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.information__title {
+    margin-bottom: var(--spacing-s);
 }

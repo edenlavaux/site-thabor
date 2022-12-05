@@ -1,47 +1,3 @@
-.header {
-    background-color: var(--color-mallard);
-    color: var(--color-off-yellow);
-}
-
-.header>* {
-    padding: 0 var(--spacing-xs);
-}
-
-.header__nav {
-    display: flex;
-    flex-direction: column;
-    padding: var(--spacing-m) 0;
-    gap: var(--spacing-xs);
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.logo__container {
-    width: 9.6rem;
-}
-
-.links__page,
-.links__language {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-m);
-}
-
-.links__language {
-    flex-direction: row;
-}
-
-.links__page a,
-.links__language a {
-    font-size: 2rem;
-    color: var(--color-off-yellow);
-}
-
 .banner {
     position: relative;
     height: 100vh;
@@ -91,6 +47,7 @@
     color: var(--color-off-yellow);
     font-size: var(--font-size-s);
     margin-top: var(--spacing-xs);
+    letter-spacing: 2px;
 }
 
 .places {
