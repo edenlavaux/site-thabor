@@ -1,34 +1,116 @@
-<h1>
-    Le Carré Duguesclin
-</h1>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc du Thabor</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
 
 <body>
-    <p>
-        Le carré Du Guesclin fut aménagé en 1825.
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/index.html" class="logo">
+                <div class="logo__container">
+                    <img src="../images/logo-parc.svg" alt="Logo du site" width="128" height="128" class="logo__image">
+                </div>
+            </a>
+            <div class="links__page">
+                <a href="#le-parc">Le parc</a>
+                <a href="#photos">Photos</a>
+                <a href="#informations-pratiques">Informations pratiques</a>
+                <a href="/carnet-de-bord.html">Carnet de bord</a>
+            </div>
+            <div class="links__language">
+                <a href="/index.html">FR</a>
+                <a href="/en.html">EN</a>
+            </div>
+        </nav>
+    </header>
 
-        Il s’agit d’une pelouse de forme trapézoïdale avec une promenade bordée d’une allée de marronniers,
-        régulièrement replantée pour des conditions de sécurité (chutes d’arbres) et esthétiques (uniformité des
-        allées).
+    <main>
+        <div class="banner">
+            <img src="../images/pelouse-gens.jpeg" alt="Carré du Guesclin" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+            <div class="banner__title-container">
+                <h1 class="banner__title">Carré du Guesclin</h1>
+                <h2 class="banner__subtitle">Pelouse du parc</h2>
+            </div>
+        </div>
 
-        Sur le petit côté, un arc en pierre mettant en valeur une colonne de Juillet permet de surplomber le boulingrin.
-        De cet observatoire, l’observateur a l’impression que le carré du Guesclin est de forme parallélépipédique.
+        <div class="content">
+            Le carré Du Guesclin fut aménagé en 1825.<br><br>
 
-        Une colonne de Juillet, réalisée par Jean-Baptiste Barré, est élevée en 1835 à la mémoire de deux rennais, Louis
-        Vaneau, polytechnicien, et Papu, chirurgien et fils d’un dentiste, morts à Paris en 1830 lors des Trois
-        Glorieuses. La colonne Vanneau-Papu doit son érection au poète Hippolyte Lucas qui se chargea d’émouvoir la
-        population sur le sort des deux rennais.
+            Il s’agit d’une pelouse de forme trapézoïdale avec une promenade bordée d’une allée de marronniers,
+            régulièrement replantée pour des conditions de sécurité (chutes d’arbres) et esthétiques (uniformité des
+            allées).
 
-        Ce monument est constitué d’un socle ainsi que d’une colonne surmontée d’une petite statue représentant la
-        Liberté.
+            Sur le petit côté, un arc en pierre mettant en valeur une colonne de Juillet permet de surplomber le
+            boulingrin.
+            De cet observatoire, l’observateur a l’impression que le carré du Guesclin est de forme parallélépipédique.
 
-        Enfin depuis 2016 la grande et belle pelouse du Carré Du Guesclin a enfin été autorisée au public. C’était un
-        peu l’énigme du parc du Thabor.
+            Une colonne de Juillet, réalisée par Jean-Baptiste Barré, est élevée en 1835 à la mémoire de deux rennais,
+            Louis
+            Vaneau, polytechnicien, et Papu, chirurgien et fils d’un dentiste, morts à Paris en 1830 lors des Trois
+            Glorieuses. La colonne Vanneau-Papu doit son érection au poète Hippolyte Lucas qui se chargea d’émouvoir la
+            population sur le sort des deux rennais.
 
-        En effet avec plus d’un million et demi de visiteurs par an, pour protéger la pelouse, la municipalité avait
-        depuis longtemps interdit l’accès à cet espace pourtant tentant.
+            Ce monument est constitué d’un socle ainsi que d’une colonne surmontée d’une petite statue représentant la
+            Liberté.
 
-        Ici, seuls quelques événements comme Mythos ou Le Grand Soufflet pouvaient installer leur chapiteau. Mais la
-        municipalité a fini par céder, face à l’augmentation de la fréquentation des espaces verts, une nouvelle qui
-        avait fortement enchanté les habitants de la ville de Rennes.
-    </p>
+            Enfin depuis 2016 la grande et belle pelouse du Carré Du Guesclin a enfin été autorisée au public. C’était
+            un
+            peu l’énigme du parc du Thabor.
+
+            En effet avec plus d’un million et demi de visiteurs par an, pour protéger la pelouse, la municipalité avait
+            depuis longtemps interdit l’accès à cet espace pourtant tentant.
+
+            Ici, seuls quelques événements comme Mythos ou Le Grand Soufflet pouvaient installer leur chapiteau. Mais la
+            municipalité a fini par céder, face à l’augmentation de la fréquentation des espaces verts, une nouvelle qui
+            avait fortement enchanté les habitants de la ville de Rennes.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title" id="informations-pratiques">Informations pratiques</span>
+        <nav class="footer__information">
+            <div class="information">
+                <span class="information__title">Horaires</span>
+                <span>8h30 - 20h30</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Adresse</span>
+                <span>Place St Mélaine 35000 Rennes</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Téléphone</span>
+                <span>02 23 62 19 40</span>
+            </div>
+        </nav>
+    </footer>
 </body>
+
+</html>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing-xl);
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
