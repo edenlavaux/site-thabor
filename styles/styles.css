@@ -128,5 +128,4 @@
     .place:nth-child(even) .place__photo {
         order: 1;
     }
-
 }
