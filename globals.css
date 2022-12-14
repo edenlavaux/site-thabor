@@ -25,7 +25,8 @@ h4 {
 
 .header__nav {
     display: flex;
-    padding: var(--spacing-m) 0;
+    justify-content: space-between;
+    padding: var(--spacing-m) var(--spacing-s);
     gap: var(--spacing-xs);
 }
 
@@ -53,7 +54,7 @@ h4 {
 
 .links__page a,
 .links__language a {
-    font-size: 2rem;
+    font-size: var(--font-size-xs);
     color: var(--color-off-yellow);
 }
 
@@ -68,15 +69,16 @@ h4 {
 .footer__information {
     display: flex;
     align-items: center;
+    text-align: center;
     margin-top: var(--spacing-l);
-    font-size: 2rem;
+    font-size: var(--font-size-xs);
     gap: var(--spacing-m);
     width: 100%;
 }
 
 .footer__title {
     justify-content: center;
-    font-size: 2rem;
+    font-size: var(--font-size-xs);
 }
 
 .information {
@@ -88,4 +90,25 @@ h4 {
 
 .information__title {
     margin-bottom: var(--spacing-s);
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 0 var(--spacing-l);
+    }
+
+    .links__page,
+    .links__language {
+        flex-direction: row;
+        gap: var(--spacing-l);
+    }
+
+    .links__page a,
+    .links__language a,
+    .footer,
+    .footer__title {
+        font-size: 2rem;
+    }
 }
