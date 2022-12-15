@@ -1,20 +1,105 @@
-<h1>
-    The Aviary
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc du Thabor</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
 
 <body>
-    <p>
-        The Aviary is one of the highlights of the Thabor Park, delighting young and old visitors alike. It is the
-        favourite place of families and bird lovers. The Aviary was designed in 1862 by the architect Jean Baptiste
-        Martenot, and is located to the west of the park, in the extension of the French garden. It is divided into two
-        levels, the first circular level contains the most exotic species and the second level is composed of a dovecote
-        which overlooks the whole aviary in its centre.
+    <header class="header">
+        <nav class="header__nav">
+            <a href="../en.html" class="logo">
+                <div class="logo__container">
+                    <img src="../images/logo-parc.svg" alt="Site's logo" width="128" height="128" class="logo__image">
+                </div>
+            </a>
+            <div class="links__page">
+                <a href="./en.html#le-parc">The park</a>
+                <a href="./en.html#photos">Photos</a>
+                <a href="#informations-pratiques">Useful information</a>
+                <a href="../carnet-de-bord.html">Logbook</a>
+            </div>
+            <div class="links__language">
+                <a href="../decouvrir/voliere.html">FR</a>
+                <a href="./aviary.html">EN</a>
+            </div>
+        </nav>
+    </header>
 
-        The aviary contains more than 420 birds, including diamond doves, Japanese sparrows, pheasants, Chinese quails,
-        parakeets and mandarin diamonds.
+    <main>
+        <div class="banner">
+            <img src="../images/voliere.jpeg" alt="Photo of the Aviary" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+            <div class="banner__title-container">
+                <h1 class="banner__title">The Aviary</h1>
+                <h2 class="banner__subtitle">For the bird's lovers</h2>
+            </div>
+        </div>
 
-        The aviary is maintained by one of the park's animal gardeners, who is responsible for feeding them, cleaning
-        their enclosures and ensuring that they reproduce well. Visitors are therefore asked not to feed the birds or
-        try to touch them.
-    </p>
+        <div class="content">
+            The Aviary is one of the highlights of the Thabor Park, delighting young and old visitors alike. It is the
+            favourite place of families and bird lovers. The Aviary was designed in 1862 by the architect Jean Baptiste
+            Martenot, and is located to the west of the park, in the extension of the French garden.<br></br>
+            It is divided into
+            two
+            levels, the first circular level contains the most exotic species and the second level is composed of a
+            dovecote
+            which overlooks the whole aviary in its centre.<br></br>
+
+            The aviary contains more than 420 birds, including diamond doves, Japanese sparrows, pheasants, Chinese
+            quails,
+            parakeets and mandarin diamonds.<br></br>
+
+            The aviary is maintained by one of the park's animal gardeners, who is responsible for feeding them,
+            cleaning
+            their enclosures and ensuring that they reproduce well. Visitors are therefore asked not to feed the birds
+            or
+            try to touch them.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title" id="informations-pratiques">Useful information</span>
+        <nav class="footer__information">
+            <div class="information">
+                <span class="information__title">Times</span>
+                <span>8h30 - 20h30</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Address</span>
+                <span>Place St Mélaine 35000 Rennes</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Phone number</span>
+                <span>02 23 62 19 40</span>
+            </div>
+        </nav>
+    </footer>
 </body>
+
+</html>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing-xl);
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>

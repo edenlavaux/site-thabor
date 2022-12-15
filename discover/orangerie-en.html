@@ -1,19 +1,107 @@
-<h1>
-    The Orangerie
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc du Thabor</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
 
 <body>
-    <p>
-        In 1807, the Orangerie and two hot greenhouses were built, but these were replaced almost sixty years later by the greenhouses designed by Martenot. Martenot's glass and steel greenhouses were largely inspired by the greenhouses of the Bordeaux Botanical Garden. 
+    <header class="header">
+        <nav class="header__nav">
+            <a href="../en.html" class="logo">
+                <div class="logo__container">
+                    <img src="../images/logo-parc.svg" alt="Site's logo" width="128" height="128" class="logo__image">
+                </div>
+            </a>
+            <div class="links__page">
+                <a href="../en.html#le-parc">The park</a>
+                <a href="../en.html#photos">Photos</a>
+                <a href="#informations-pratiques">Useful information</a>
+                <a href="../carnet-de-bord.html">Logbook</a>
+            </div>
+            <div class="links__language">
+                <a href="../decouvrir/orangerie.html">FR</a>
+                <a href="./discover/orangerie-en.html">EN</a>
+            </div>
+        </nav>
+    </header>
 
-        Two more expensive projects proposed by Leroy in 1844 and Aristide Tourneux in 1851 were successively rejected by the city. 
-        
-        On July 17, 1944, Martenot's greenhouses were hit by bombing: new greenhouses, more classical and integrated into the orangery buildings, were built after the war by Georges Lefort. 
-        
-        The greenhouses contained tropical plants which have now almost completely disappeared due to budgetary problems (the premises had to be heated to 25°C) and phytosanitary problems: only a collection of cacti remains in the west pavilion. 
-        
-        Composed of windows on all sides except the north, it is decorated with bas-reliefs and inscriptions commemorating the great names of botany and horticulture : the pediment is adorned with the names of botanists; Linné and De Jussieu are represented on the western part and La Quintinie and Le Nôtre on the eastern part. 
-        
-        Nowadays, the 85 m² of the western Orangerie is used as an exhibition room. 
-    </p>
+    <main>
+        <div class="banner">
+            <img src="../images/orangerie-focus.jpeg" alt="Photo of the Orangerie" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+            <div class="banner__title-container">
+                <h1 class="banner__title">The Orangerie</h1>
+                <h2 class="banner__subtitle">From greenhouse to exhibition hall</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            In 1807, the Orangerie and two hot greenhouses were built, but these were replaced almost sixty years later
+            by the greenhouses designed by Martenot. Martenot's glass and steel greenhouses were largely inspired by the
+            greenhouses of the Bordeaux Botanical Garden.<br></br>
+
+            Two more expensive projects proposed by Leroy in 1844 and Aristide Tourneux in 1851 were successively
+            rejected by the city.<br></br>
+
+            On July 17, 1944, Martenot's greenhouses were hit by bombing: new greenhouses, more classical and integrated
+            into the orangery buildings, were built after the war by Georges Lefort.<br></br>
+
+            The greenhouses contained tropical plants which have now almost completely disappeared due to budgetary
+            problems (the premises had to be heated to 25°C) and phytosanitary problems: only a collection of cacti
+            remains in the west pavilion.<br></br>
+
+            Composed of windows on all sides except the north, it is decorated with bas-reliefs and inscriptions
+            commemorating the great names of botany and horticulture : the pediment is adorned with the names of
+            botanists; Linné and De Jussieu are represented on the western part and La Quintinie and Le Nôtre on the
+            eastern part.<br></br>
+
+            Nowadays, the 85 m² of the western Orangerie is used as an exhibition room.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title" id="informations-pratiques">Useful information</span>
+        <nav class="footer__information">
+            <div class="information">
+                <span class="information__title">Times</span>
+                <span>8h30 - 20h30</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Address</span>
+                <span>Place St Mélaine 35000 Rennes</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Phone number</span>
+                <span>02 23 62 19 40</span>
+            </div>
+        </nav>
+    </footer>
 </body>
+
+</html>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing-xl);
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>

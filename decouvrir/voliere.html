@@ -1,20 +1,105 @@
-<h1>
-    La Volière
-</h1>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc du Thabor</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
 
 <body>
-    <p>
-        La Volière est un des points phare du parc du Thabor qui ravie petits et grands. C’est le lieu privilégié des
-        familles et des amoureux des oiseaux. La Volière a été imaginée en 1862 par l’architecte Jean Baptiste Martenot,
-        elle se situe à l’ouest du parc, dans le prolongement du jardin français. Elle est séparée en deux étages, le
-        premier niveau circulaire abrite les espèces les plus exotiques et le second niveau se compose d’un pigeonnier
-        qui surplombe toute la volière en son centre.
+    <header class="header">
+        <nav class="header__nav">
+            <a href="../index.html" class="logo">
+                <div class="logo__container">
+                    <img src="../images/logo-parc.svg" alt="Logo du site" width="128" height="128" class="logo__image">
+                </div>
+            </a>
+            <div class="links__page">
+                <a href="../index/html#le-parc">Le parc</a>
+                <a href="../index/html#photos">Photos</a>
+                <a href="#informations-pratiques">Informations pratiques</a>
+                <a href="../carnet-de-bord.html">Carnet de bord</a>
+            </div>
+            <div class="links__language">
+                <a href="./voliere.html">FR</a>
+                <a href="../discover/aviary.html">EN</a>
+            </div>
+        </nav>
+    </header>
 
-        La Volière regroupe plus de 420 oiseaux dont des colombes diamant, des moineaux du Japon, des faisans, des
-        cailles de Chines, des perruches et des diamants mandarins.
+    <main>
+        <div class="banner">
+            <img src="../images/voliere.jpeg" alt="Photo de la Volière" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+            <div class="banner__title-container">
+                <h1 class="banner__title">La Voliere</h1>
+                <h2 class="banner__subtitle">Pour les amoureux des oiseaux</h2>
+            </div>
+        </div>
 
-        L’entretien de La Volière est effectué par un des jardiniers animaliers du parc qui veille à les nourrir, à
-        nettoyer leur enclos mais également à leur bonne reproduction. Il est donc demandé aux visiteurs de ne pas
-        nourrir les oiseaux ou d’essayer de les toucher.
-    </p>
+        <div class="content">
+            La Volière est un des points phare du parc du Thabor qui ravie petits et grands.<br></br>
+            C’est le lieu privilégié
+            des
+            familles et des amoureux des oiseaux. La Volière a été imaginée en 1862 par l’architecte Jean Baptiste
+            Martenot,
+            elle se situe à l’ouest du parc, dans le prolongement du jardin français.<br></br>
+            Elle est séparée en deux étages,
+            le
+            premier niveau circulaire abrite les espèces les plus exotiques et le second niveau se compose d’un
+            pigeonnier
+            qui surplombe toute la volière en son centre.<br></br>
+
+            La Volière regroupe plus de 420 oiseaux dont des colombes diamant, des moineaux du Japon, des faisans, des
+            cailles de Chines, des perruches et des diamants mandarins.<br></br>
+
+            L’entretien de La Volière est effectué par un des jardiniers animaliers du parc qui veille à les nourrir, à
+            nettoyer leur enclos mais également à leur bonne reproduction. Il est donc demandé aux visiteurs de ne pas
+            nourrir les oiseaux ou d’essayer de les toucher.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title" id="informations-pratiques">Informations pratiques</span>
+        <nav class="footer__information">
+            <div class="information">
+                <span class="information__title">Horaires</span>
+                <span>8h30 - 20h30</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Adresse</span>
+                <span>Place St Mélaine 35000 Rennes</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Téléphone</span>
+                <span>02 23 62 19 40</span>
+            </div>
+        </nav>
+    </footer>
 </body>
+
+</html>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing-xl);
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>

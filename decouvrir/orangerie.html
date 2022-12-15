@@ -1,27 +1,110 @@
-<h1>
-    L'Orangerie
-</h1>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc du Thabor</title>
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
 
 <body>
-    <p>
-        En 1807, l’orangerie et deux serres chaudes furent construites, mais ces dernières furent remplacées presque
-        soixante ans plus tard par les serres conçues par Martenot. Les serres de verre et d’acier de Martenot
-        s’inspirent largement des serres du jardin botanique de Bordeaux.
+    <header class="header">
+        <nav class="header__nav">
+            <a href="../index.html" class="logo">
+                <div class="logo__container">
+                    <img src="../images/logo-parc.svg" alt="Logo du site" width="128" height="128" class="logo__image">
+                </div>
+            </a>
+            <div class="links__page">
+                <a href="../index.html#le-parc">Le parc</a>
+                <a href="../index.html#photos">Photos</a>
+                <a href="../index.html#informations-pratiques">Informations pratiques</a>
+                <a href="../carnet-de-bord.html">Carnet de bord</a>
+            </div>
+            <div class="links__language">
+                <a href="./orangerie.html">FR</a>
+                <a href="../discover/orangerie-en.html">EN</a>
+            </div>
+        </nav>
+    </header>
 
-        Deux projets plus onéreux proposés par Leroy en 1844 et Aristide Tourneux en 1851 furent successivement rejetés
-        par la ville.
+    <main>
+        <div class="banner">
+            <img src="../images/orangerie-focus.jpeg" alt="Photo de l'Orangerie" class="banner__image">
+            <div class="banner__overlay" aria-hidden="true"></div>
+            <div class="banner__title-container">
+                <h1 class="banner__title">L'Orangerie</h1>
+                <h2 class="banner__subtitle">De serre à salle d'exposition</h2>
+            </div>
+        </div>
 
-        Le 17 juillet 1944, les serres de Martenot sont touchées par les bombardements : de nouvelles serres plus
-        classiques et se voulant intégrées aux bâtiments de l’orangerie furent construites après la guerre par Georges
-        Lefort.
+        <div class="content">
+            En 1807, l’orangerie et deux serres chaudes furent construites, mais ces dernières furent remplacées presque
+            soixante ans plus tard par les serres conçues par Martenot. Les serres de verre et d’acier de Martenot
+            s’inspirent largement des serres du jardin botanique de Bordeaux.<br></br>
 
-        Les serres contenaient des plantes tropicales qui ont désormais presque totalement disparu en raison de
-        problèmes budgétaires (les locaux devaient être chauffés à 25 °C) et phytosanitaires : il ne reste à présent
-        qu’une collection de cactus dans le pavillon ouest.
+            Deux projets plus onéreux proposés par Leroy en 1844 et Aristide Tourneux en 1851 furent successivement
+            rejetés
+            par la ville.<br></br>
 
-        Composé de fenêtres de tous les côtés sauf au nord, elle est décorée par des bas-reliefs et des inscriptions
-        commémorant les grands noms de la botanique et de l’horticulture : le fronton est orné de noms de botanistes ;
-        Linné et De Jussieu sont représentés sur la partie ouest et La Quintinie et Le Nôtre sur la partie est.
+            Le 17 juillet 1944, les serres de Martenot sont touchées par les bombardements : de nouvelles serres plus
+            classiques et se voulant intégrées aux bâtiments de l’orangerie furent construites après la guerre par
+            Georges
+            Lefort.<br></br>
 
-        De nos jours, les 85 m² de l’orangerie ouest servent de salle d’exposition.
+            Les serres contenaient des plantes tropicales qui ont désormais presque totalement disparu en raison de
+            problèmes budgétaires (les locaux devaient être chauffés à 25 °C) et phytosanitaires : il ne reste à présent
+            qu’une collection de cactus dans le pavillon ouest.<br></br>
+
+            Composé de fenêtres de tous les côtés sauf au nord, elle est décorée par des bas-reliefs et des inscriptions
+            commémorant les grands noms de la botanique et de l’horticulture : le fronton est orné de noms de botanistes
+            ;
+            Linné et De Jussieu sont représentés sur la partie ouest et La Quintinie et Le Nôtre sur la partie est.
+
+            De nos jours, les 85 m² de l’orangerie ouest servent de salle d’exposition.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title" id="informations-pratiques">Informations pratiques</span>
+        <nav class="footer__information">
+            <div class="information">
+                <span class="information__title">Horaires</span>
+                <span>8h30 - 20h30</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Adresse</span>
+                <span>Place St Mélaine 35000 Rennes</span>
+            </div>
+            <div class="information">
+                <span class="information__title">Téléphone</span>
+                <span>02 23 62 19 40</span>
+            </div>
+        </nav>
+    </footer>
 </body>
+
+</html>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing-xl);
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
